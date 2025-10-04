@@ -18,3 +18,30 @@ knitr::opts_chunk$set(
 library(MATH4753F25zachary)
 ```
 
+## Mathematical Derivation of Birthday Problem
+
+\[
+\begin{aligned}
+P(\text{at least one shared}) 
+&= 1 - P(\text{all birthdays distinct}) \\[6pt]
+P(\text{all birthdays distinct}) 
+&= \frac{365}{365} \cdot \frac{364}{365} \cdot \frac{363}{365} \cdots \frac{365 - (n-1)}{365} \\[6pt]
+&= \frac{365 \times (365 - 1) \times (365 - 2) \times \cdots \times (365 - n + 1)}{365^n} \\[6pt]
+&= \frac{\dfrac{365!}{(365-n)!}}{365^n} \\[6pt]
+\quad
+P(\text{at least one shared}) 
+&= 1 - \frac{365!}{(365-n)! \, 365^n}.
+\end{aligned}
+\]
+
+##Body of Birthday Function
+
+```{r}
+print(birthday)
+```
+
+## Use Birthday Function as pulled from package
+
+```{r}
+birthday(20:25)
+```
