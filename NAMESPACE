@@ -2,6 +2,7 @@
 
 export(birthday)
 export(myfirstfunction)
+export(myncurve)
 export(mysample)
 export(mysum)
 export(scatterhist)
