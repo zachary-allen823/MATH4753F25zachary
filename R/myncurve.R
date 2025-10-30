@@ -1,3 +1,5 @@
+utils::globalVariables("x")
+
 #' myncurve
 #'
 #' @param mu a number
