@@ -5,6 +5,7 @@
 #' @param p probability of a ticket holder attending
 #'
 #' @returns discrete and continuous n value and corresponding graphs
+#' @importFrom stats pbinom pnorm
 #' @export
 #'
 #' @examples ntickets(N=400, gamma=0.02, p=0.95)
