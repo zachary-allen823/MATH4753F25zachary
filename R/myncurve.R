@@ -5,6 +5,7 @@
 #' @param a a number less than mu +/- 3*sigma
 #'
 #' @returns a normal curve plot with shaded area -infinity to a
+#' @import graphics grDevices
 #' @export
 #'
 #' @examples
